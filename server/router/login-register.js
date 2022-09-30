@@ -60,10 +60,11 @@ router.post('/register', (req, res) => {
     }
     result = JSON.parse(JSON.stringify(result))
     let newAccount
-    if (result[0]['max(account)'] === null) newAccount = '10000'
+    if (result[0]['max(account)'] === null) newAccount = 10000
     else newAccount = result[0]['max(account)'] + 1
-    db.query("insert into chat values(?,?,'','#icon-icon-test1',?)", [newAccount, password, username], (err, result) => {
+    db.query("insert into chat values(?,?,'','#icon-icon-test1',?,0)", [newAccount, password, username], (err, result) => {
       if (err) {
+        console.log(err.message)
         res.send({
           status: 500,
           msg: err.message
