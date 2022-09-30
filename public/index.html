@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="" style="--bgc:#FFEDDE; --text:#000000; --input:#FFFFFF; --bodybgc: rgba(21, 23, 38, 1);--em:normal;--underline:none;--italic:normal">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: var(--text);
+        font-style: var(--italic);
+        font-weight: var(--em);
+        text-decoration: var(--underline);
+        
+      }
+      body {
+        background-color: var(--bodybgc);
+      }
+      li {
+        list-style: none;
+      }
+      .icon {
+        padding: 2px;
+        width: 50px;
+        height: 50px;
+        vertical-align: -3px;
+        fill: currentColor;
+        overflow: hidden;
+      }
+      a {
+        text-decoration: none;
+        color: var(--text);
+      }
+      input , textarea {
+        background-color: var(--input);
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
