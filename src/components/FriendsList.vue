@@ -5,7 +5,8 @@
         :style="is_list && !online ?'filter: grayscale(.8)' : ''">
         <use :xlink:href="picture"></use>
       </svg>
-      <img v-else :src="'http://127.0.0.1:24000/head/'+picture" alt="">
+      <img v-else :src="'http://127.0.0.1:24000/head/'+picture" alt=""
+        :style="is_list && !online ?'filter: grayscale(.8)' : ''">
     </div>
     <div class="middle">
       <h4 class="username">{{ nickname }}</h4>
