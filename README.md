@@ -3,6 +3,9 @@
 ## 项目介绍
 > 日常学习⽣活中，我们离不开聊天软件。⽆论是微信、QQ，还是抖⾳、头条，亦或是未来⼯作中会⽤到的⻜书、企业微信、钉钉，都集成了聊天功能。但是，好像在⽹⻚上也能够实现聊天功能，所以我们就来⾃⼰⽤⽹⻚实现⼀个聊天功能！
 
+项目界面主要风格如下：
+[Image loading failed](/appearance.png)
+
 ## 技术栈
 > 主要技术: vue(vue-cli、vue-router、vuex)、nodejs、axios    
 > 辅助工具: jQuery、less、iconfont阿里巴巴图标库  
